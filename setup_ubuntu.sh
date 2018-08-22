@@ -1,3 +1,5 @@
+sudo -s
+
 sudo apt-get -y update
 sudo apt-get -y upgrade
 sudo apt-get -y install git
@@ -24,3 +26,8 @@ sudo npm i -g nodemon
 sudo npm install -g eslint
 git config --global user.email "batiste.andre53@hotmail.fr"
 sudo apt-get install -y mysql-server
+
+
+sudo apt-get install incron
+sudo echo "root" > /etc/incron.allow
+sudo echo "/home/nithramir/.config/Code/User/keybindings.json IN_MODIFY sh /home/nithramir/setup/cron/on_change.sh" > /etc/incron.d/setup
