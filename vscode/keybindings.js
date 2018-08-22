@@ -24,7 +24,4 @@
         "when": "terminalFocus"
     }
 
-
-    
-
 ]
