@@ -21,5 +21,6 @@ sudo apt-get -y install google-chrome-stable
 sudo snap install discord
 sudo apt-get -y install npm
 sudo npm i -g nodemon
+sudo npm install -g eslint
 git config --global user.email "batiste.andre53@hotmail.fr"
 sudo apt-get install -y mysql-server
