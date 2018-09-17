@@ -1,5 +1,7 @@
 sudo apt-get -y update
 sudo apt-get -y upgrade
+sudo apt-get -y make
+sudo apt-get -y gcc
 sudo apt-get -y install git
 sudo apt-get -y install zsh
 sudo apt-get -y install vim
@@ -26,7 +28,11 @@ sudo npm install -g eslint
 git config --global user.email "batiste.andre53@hotmail.fr"
 sudo apt-get install -y mysql-server
 
-
+curl -L http://download.redis.io/releases/redis-4.0.11.tar.gz > redis-4.0.11.tar.gz
+tar xvf redis-4.0.11.tar.gz
+sudo make -C redis-4.0.11/
+sudo cp redis-4.0.11/src/redis-server /usr/local/bin
+sudo cp redis-4.0.11/src/redis-cli /usr/local/bin
 # sudo apt-get install incron
 # rm -rf /etc/incron.allow
 # sudo echo "/home/nithramir/.config/Code/User/keybindings.json IN_MODIFY sh /home/nithramir/setup/cron/on_change.sh" > /etc/incron.d/setup
