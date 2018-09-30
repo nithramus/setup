@@ -22,7 +22,15 @@
         "key": "ctrl+shift+right",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
-    }
+    },
+    {
+        "key": "alt+x",
+        "command": "editor.action.jumpToBracket"
+    },
+    { "key": "ctrl+l",       "command": "editor.action.smartSelect.grow",
+        "when": "editorTextFocus" },
+    { "key": "ctrl+m",        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus" },
 
 
 
